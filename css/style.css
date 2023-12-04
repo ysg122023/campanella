@@ -914,7 +914,7 @@ footer p {
   /*------ HEADER */
   #about .about_wrap {
     /* height: calc(70rem); */
-    height: 50em;
+    height: 48em;
   }
   #about .about_flex .haikei01 {
     height: 50%;
@@ -940,7 +940,8 @@ footer p {
     min-height: 40rem;
   }
   #menu .menu_wrap .menu_img {
-    width: 50%;
+    /* width: 50%; */
+    width: 360px; /* 固定 */
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -1002,14 +1003,18 @@ footer p {
   }
   /*------ CONCEPT */
   #about .about_wrap {
-    height: 70em;
+    height: 68em;
   }
   /*------ MENU */
+  #menu .menu_wrap {
+    min-height: 38rem;
+  }
   #menu .menu_wrap li {
     font-size: 1rem;
   }
   #menu .menu_wrap .menu_img {
-    width: 80%;
+    /* width: 80%; */
+    width: 300px; /* 固定 */
   }
   /* ------ MAP */
   #map .map_wrap p {
