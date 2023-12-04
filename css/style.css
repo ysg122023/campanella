@@ -767,7 +767,7 @@ header .move_out {
 #about .about_moji {
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 10;
   /* 文字中身 */
   display: flex;
   flex-direction: column;
@@ -935,6 +935,16 @@ footer p {
     align-items: center;
     min-height: 25rem;
   }
+  /*------ MENU */
+  #menu .menu_wrap {
+    min-height: 40rem;
+  }
+  #menu .menu_wrap .menu_img {
+    width: 50%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   /*------ SNS */
   #sns {
     flex-direction: column;
@@ -964,7 +974,7 @@ footer p {
 }
 /*****(width < 660px)*****/
 /* ハンバーガーメニュー */
-@media (width < 660px) {
+@media (width <= 660px) {
   header .header_wrap .sns_flex {
     display: none;
     /* ハンバーガーメニュー向け */
@@ -974,7 +984,7 @@ footer p {
     height: 55em;
   }
 }
-@media (width >= 660px) {
+@media (width > 660px) {
   header .header_wrap .nav_flex .toggleButton {
     display: none;
   }
@@ -995,17 +1005,11 @@ footer p {
     height: 70em;
   }
   /*------ MENU */
-  #menu .menu_wrap {
-    min-height: 40rem;
-  }
   #menu .menu_wrap li {
     font-size: 1rem;
   }
   #menu .menu_wrap .menu_img {
     width: 80%;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
   }
   /* ------ MAP */
   #map .map_wrap p {
