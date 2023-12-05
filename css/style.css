@@ -910,7 +910,8 @@ footer p {
 }
 
 /***** レスポンシブ対応 *****/
-@media (width < 800px) {
+/* @media(width < 800px) { */
+@media (max-width: 800px) {
   /*------ HEADER */
   #about .about_wrap {
     /* height: calc(70rem); */
@@ -975,7 +976,8 @@ footer p {
 }
 /*****(width < 660px)*****/
 /* ハンバーガーメニュー */
-@media (width <= 660px) {
+/* @media(width <= 660px) { */
+@media (max-width: 660px) {
   header .header_wrap .sns_flex {
     display: none;
     /* ハンバーガーメニュー向け */
@@ -985,13 +987,15 @@ footer p {
     height: 55em;
   }
 }
-@media (width > 660px) {
+/* @media(width >660px) { */
+@media (min-width: 660px) {
   header .header_wrap .nav_flex .toggleButton {
     display: none;
   }
 }
 /*****(width < 530px)*****/
-@media (width < 530px) {
+/* @media(width < 530px) { */
+@media (max-width: 530px) {
   /*------ HEADER */
   header .header_wrap .main_visual_moji .set_blank {
     display: block;
